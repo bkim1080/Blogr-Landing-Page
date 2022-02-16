@@ -1,0 +1,305 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Overpass", sans-serif;
+	font-size: 1rem;
+	text-align: center;
+}
+
+footer {
+	background-color: hsl(240, 10%, 16%);
+	border-radius: 0 110px 0 0;
+	color: hsl(240, 2%, 79%);
+	margin-top: 3.8rem;
+	padding: 4.4rem 0;
+}
+
+h1 {
+	font-size: 2.2rem;
+	font-weight: 700;
+	padding-bottom: 1.1rem;
+}
+
+h2 {
+	color: hsl(208, 49%, 24%);
+	font-size: 1.8rem;
+	font-weight: 700;
+	padding: 1.9rem 0 1.1rem 0;
+}
+
+h3 {
+	color: hsl(208, 49%, 24%);
+	font-size: 1.5rem;
+	padding: 1.9rem 0 1.1rem 0;
+}
+
+header {
+	background: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+	border-radius: 0 0 0 110px;
+	color: white;
+	margin-bottom: 70px;
+	padding: 3.8rem 0 8.8rem 0;
+	width: 100%;
+}
+
+header p {
+	color: white;
+	font-size: 1.1rem;
+	font-weight: 300;
+	line-height: 1.3;
+	padding-bottom: 2.8rem;
+}
+
+p {
+	color: hsl(207, 13%, 34%);
+	font-size: 1rem;
+	line-height: 1.8;
+	padding-bottom: 1.3rem;
+}
+
+section img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+ul {
+	list-style: none;
+}
+
+.bar {
+	background-color: white;
+	display: block;
+	height: 3px;
+	margin: 5px auto;
+	transition: all 0.3s ease-in-out;
+	width: 1.9rem;
+}
+
+.btn {
+	border-radius: 50px;
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	padding: 1em;
+	width: 9.4rem;
+}
+
+.btn-start {
+	background-color: white;
+	border: none;
+	color: hsl(356, 100%, 66%);
+	margin-right: 0.6rem;
+}
+
+.btn-start:hover {
+	background-color: hsl(355, 100%, 74%);
+	color: white;
+	cursor: pointer;
+	transition: all 0.1s linear;
+}
+
+.btn-learn {
+	background-color: transparent;
+	border: 1px solid white;
+	color: white;
+}
+
+.btn-learn:hover {
+	background-color: white;
+	color: hsl(356, 100%, 66%);
+	cursor: pointer;
+	transition: all 0.1s linear;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1100px;
+	width: 85%;
+}
+
+.footer-links {
+	line-height: 1.7;
+	list-style-type: none;
+}
+
+.footer-links li:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.footer-links li:nth-of-type(1) {
+	color: white;
+	cursor: default;
+	padding: 1.8rem 0 0.6rem 0;
+	text-decoration: none;
+}
+
+.hamburger.active .bar:nth-child(2) {
+	opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+	transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+	transform: translateY(-8px) rotate(-45deg);
+}
+
+.img-editor {
+	padding: 20px 0 30px 0;
+}
+
+.item-link {
+	color: hsl(208, 49%, 24%);
+	font-size: 1.1rem;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.item-link:hover {
+	text-decoration: underline;
+}
+
+.logo-footer {
+	margin: 0 auto 20px auto;
+	width: 5.3rem;
+}
+
+.logo-header {
+	width: 5.3rem;
+}
+
+.menu {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 10px 27px rgba(0, 0, 0, 0.336);
+	left: -100%;
+	position: fixed;
+	top: 120px;
+	transition: 0.3s;
+	width: 90%;
+}
+
+.menu.active {
+	left: 5%;
+	position: absolute;
+	z-index: 100;
+}
+
+.menu-item {
+	margin: 1.6rem 0;
+}
+
+.middle {
+	background: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+	border-radius: 0 110px;
+	margin: 11.3rem 0 4.4rem 0;
+	width: 100%;
+}
+
+.middle h2 {
+	color: white;
+	padding: 0.6rem 0 1.1rem 0;
+}
+
+.middle p {
+	color: white;
+}
+
+.middle .container {
+	bottom: 8.1rem;
+	position: relative;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 6.9rem;
+}
+
+.text-align {
+	text-align: center;
+}
+
+@media (min-width: 750px) {
+	.desktop-align {
+		padding-left: 2.5rem;
+		text-align: left;
+	}
+
+	.footer-links {
+		display: flex;
+		flex-basis: 100%;
+		padding-bottom: 0;
+	}
+
+	.footer-logo {
+		display: inline;
+	}
+
+	.hamburger {
+		display: none;
+	}
+
+	.item-link {
+		color: white;
+		font-weight: 400;
+	}
+
+	.menu {
+		align-items: center;
+		background-color: transparent;
+		box-shadow: none;
+		display: flex;
+		left: 0;
+		position: relative;
+		top: 0;
+		transition: none;
+	}
+
+	.menu.active {
+		left: 0;
+		position: relative;
+	}
+
+	.menu-item {
+		font-weight: 400;
+		margin: 0 0 0 2.5rem;
+	}
+
+	.menu-item:first-of-type {
+		font-weight: 400;
+		margin: 0 0 0 3.8rem;
+	}
+
+	.middle {
+		margin-bottom: 7.5rem;
+	}
+
+	.middle .container {
+		bottom: 0;
+		height: 21.9rem;
+	}
+
+	.middle .split {
+		align-items: center;
+		flex-direction: row-reverse;
+	}
+
+	.split {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+	}
+
+	.split > *,
+	.footer-links > * {
+		flex-basis: 100%;
+	}
+}
