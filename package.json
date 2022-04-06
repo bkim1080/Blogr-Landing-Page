@@ -27,6 +27,16 @@
 		"watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
 		"watch:scss": "onchange 'css/*.scss' -- npm run scss"
 	},
+	"devDependencies": {
+		"copyfiles": "^2.2.0",
+		"imagemin-cli": "^5.1.0",
+		"lite-server": "^2.6.1",
+		"node-sass": "^4.14.1",
+		"onchange": "^7.0.0",
+		"parallelshell": "3.0.1",
+		"rimraf": "^3.0.2",
+		"usemin-cli": "^0.6.0"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/bkim1080/Blogr-Landing-Page.git"
